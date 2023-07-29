@@ -2,4 +2,4 @@
 # list bash processes
 #+ processes contains  "bash".
 
-pgrep -l bash
+pgrep bash -l
