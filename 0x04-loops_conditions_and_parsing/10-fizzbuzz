@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Displays numbers from 1 to 100 in list format.
+
+for _num in {1..100}
+do
+  if (( _num % 3 == 0 && _num % 5 == 0 ))
+  then
+    echo "FizzBuzz"
+  elif (( _num % 3 == 0 ))
+  then
+    echo "Fizz"
+  elif (( _num % 5 == 0 ))
+  then
+    echo "Buzz"
+  else
+    echo "$_num"
+  fi
+done
